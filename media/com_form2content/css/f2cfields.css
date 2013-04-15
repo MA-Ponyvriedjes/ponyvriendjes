@@ -1,0 +1,52 @@
+div.f2c_field input, 
+div.f2c_field textarea,
+div.f2c_field select,
+div.f2c_field button
+{
+    margin: 2px 2px 2px 0;
+    width: auto;
+
+	float:left;
+	clear:both;
+	
+}
+/*
+div.f2c_field input.radio
+{
+	float:left;
+	clear:both;
+}
+*/
+/*
+div.f2c_field label.radio
+{
+	color: #ff0000;
+}
+
+.radiobtn, .radiobtn-test
+{
+	color: #ff0000;
+float:left; clear:none; display:block; }
+*/
+
+fieldset.adminform label
+{
+    width: 35px;
+}
+
+div.checkbox_wrapper
+{
+	float: left;
+	position:relative;
+	margin-bottom: 3px;
+}
+
+div.checkbox_label
+{
+	position:absolute;
+	top:50%; 
+	height:1em; 
+	margin-top:-.5em; 
+	width: 200px;
+	margin-left: 22px;
+}

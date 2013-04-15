@@ -1,0 +1,69 @@
+<install type="module" version="1.6.0">
+        	<name>F2CSearchContent</name>
+	<author>J. Munk</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>(C) 2011</copyright>
+	<license>MIT</license>
+	<authorEmail>jelle@stoeldemunk.nl</authorEmail>
+	<authorUrl>www.stoeldemunk.nl</authorUrl>
+	<version>1.0</version>
+	<description>Display your Form 2 Content articles</description>
+	<files>
+		<filename module="mod_f2csearchcontent">mod_f2csearchcontent.php</filename>
+		<filename>helper.php</filename>
+		<filename>mod_f2csearchcontent.xml</filename>
+		<folder>elements</folder>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+	 <fields name="params" addfieldpath="/modules/mod_f2csearchcontent/elements">
+	<fieldset name="BASIC">
+
+		<field name="query_id" default="" label="Select query from component"  type="sql" query="SELECT query_id, title FROM #__f2c_querys" key_field="query_id" value_field="title" >
+			<option value='0'>Geen</option>
+		</field>
+
+		<field name="project_id" default="" label="Select content type" description="Leave blank to select all, use ctr to select multiple"  type="sqlmultilistx" sql="SELECT id, title FROM #__f2c_project" key_field="id" value_field="title" multiple="multiple" />
+		
+	
+		<field name="category_id" default="" label="Select categoy" description="Leave blank to select all, use ctr to select multiple"  type="sqlmultilistx" sql="SELECT id, title FROM #__categories WHERE extension='com_content'" key_field="id" value_field="title" multiple="multiple" />
+		<field name="include_subcategories" type="radio" default="0" label="Include subcategories" description="">
+  			<option value="0">no</option>
+  			<option value="1">yes</option>
+		</field>
+		<field name="fromdate" type="calendar" default="" label="Select a from date" description="" format="%d-%m-%Y" />
+		<field name="tilldate" type="calendar" default="" label="Select a till date" description="" format="%d-%m-%Y" />
+		<field name="include_form_ids" type="text" default="" label="Always include the following articles" description="Include all articles with the following comma seperatod lis of form id's" />
+		<field name="exclude_form_ids" type="text" default="" label="Always exclude the following articles" description="Exlude all articles in the following comma seperatod lis of form id's" />
+	</fieldset>	
+	<fieldset name="ADVANCED">
+		
+	
+		<field name="limit" type="text" default="1" label="Display #" description="Number of articles to display" />
+		<field name="template" type="filelist" default="" label="Select template file" description="" directory="modules/mod_f2csearchcontent/tmpl" filter="" exclude="" stripext=".php" hide_none="true" hide_default="none" />
+		
+		<field name="order_by" type="list" default="none" label="Order By" description="Ordering options">
+			
+			<option value="publish_up">Publish date</option>			
+			<option value="publish_down">Depublish date</option>
+			<option value="created_date">Created date</option>		
+			<option value="title">Article name</option>
+			<option value="ordering">Article Order</option>				
+					
+	  </field>
+		<field name="direction" type="list" default="c_asc" label="Direction" description="Ordering options">
+			<option value="desc">Descending</option>
+			<option value="asc">Ascending</option>					
+	  </field>
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+
+		<field name="@spacer" type="spacer" default="" label=
+		"" description="" />
+		
+		
+			
+
+	</fieldset>
+</fields>
+  </config>
+</install>

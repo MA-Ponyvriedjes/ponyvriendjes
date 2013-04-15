@@ -1,0 +1,17 @@
+
+.lib_css3{ .box_shadow{
+
+	.box_shadow(@x:3px, @y:3px, @blur:5px, @spread:0px, @color) {
+		-moz-box-shadow: @x @y @blur @spread @color;
+		-webkit-box-shadow: @x @y @blur @spread @color;
+		box-shadow: @x @y @blur @spread @color;
+		//behavior: url("@{prefix}@{prefix}js/lib_default/PIE.htc");
+	}
+
+	.box_shadow_multiple(@box-shadow){
+		-moz-box-shadow: @box-shadow;
+	  	-webkit-box-shadow: @box-shadow;
+	  	box-shadow: @box-shadow;
+	  	
+	}
+}}

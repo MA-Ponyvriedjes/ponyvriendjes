@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FORM2CONTENTCUSTOMSEARCH_LIST_VIEW_DEFAULT_TITLE" option="COM_FORM2CONTENTCUSTOMSEARCH_LIST_VIEW_DEFAULT_OPTION">
+		<message>COM_FORM2CONTENTCUSTOMSEARCH_LIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request">
+
+			<field name="query_id" default="" label="Select query from component"  type="sql" query="SELECT query_id, title FROM #__f2c_querys" key_field="query_id" value_field="title"  />
+		
+		</fieldset>
+	</fields>
+		<fields name="params">
+    <fieldset name="basic" label="Layout">
+       <field name="layout_type" type="list"
+	        label="Layout">
+	          <option value="intro">Intro</option>
+	          <option value="main">Main</option>
+	          
+	       </field>
+	   </fieldset>
+	</fields>
+</metadata>

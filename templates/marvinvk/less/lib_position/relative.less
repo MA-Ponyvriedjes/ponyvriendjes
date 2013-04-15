@@ -1,0 +1,58 @@
+.lib_position{ .relative{
+		
+	.left(@width, @height){
+		float:left;
+		line-height:@height;
+		width:@width;
+	}
+
+	.right(@width, @height){
+		float:right;
+		line-height:@height;
+		width:@width;
+	}
+
+	.fluid_list(@total_width,@height,@total_items,@margin){
+
+		margin-left:-@margin;
+		display:block;
+		float:none;
+		li{
+			float:left;
+			line-height:@height;
+			width: @total_width/@total_items;
+		}
+		a{
+			
+			margin-left:@margin;
+			float:none;
+			display:block;
+			text-align:center;
+		}
+	}
+
+	.mix_fixed_fluid(@fixed-width,@top,@left,@position:left) when (@position=left){
+		position:relative;
+		padding-left:@fixed-width+@left;
+		.fluid{width:100%;}
+		.fixed{
+			position:absolute;
+			top:@top;
+			left:@left;
+			width:@fixed-width;
+		}
+	}
+
+	.mix_fixed_fluid(@fixed-width,@top,@left,@position:left) when (@position=right){
+		position:relative;
+		padding-right:@fixed-width;
+		.fluid{width:100%;}
+		.fixed{
+			position:absolute;
+			top:@top;
+			right:@left;
+			width:@fixed-width;
+		}
+	}
+
+}}

@@ -1,0 +1,50 @@
+.lib_grid{ .grid{
+
+	// /////////////////
+	// // Semantic.gs // for LESS: http://lesscss.org/
+	// /////////////////
+
+	// // Defaults which you can freely override
+	
+
+
+	// // Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+	
+	// // @correction: 0.5 / @min-width * 100 * 1%;
+
+	// // The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+	
+
+	// //////////
+	// // GRID //
+	// //////////
+
+	
+	.container(){
+		margin:0 auto;
+		width:@total-width;
+	}
+	.row(@columns:@columns) {
+		display: block;
+	 	width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+	 	margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+		// *width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width)-@correction;
+	 	// *margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
+	 	.lib_util.clearfix > .clearfix();
+	}
+	.column(@x,@columns:@columns) {
+	 	display: inline;
+	 	float: left;
+	 	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+	 	margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+	 	// *width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width)-@correction;
+	// 	// *margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width)-@correction;
+	}
+	// .push(@offset:1) {
+	// 	margin-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+	// }
+	// .pull(@offset:1) {
+	// 	margin-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+	// }
+
+}}

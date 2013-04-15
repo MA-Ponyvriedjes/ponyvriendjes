@@ -1,0 +1,53 @@
+.com_mailforms.contact.default{
+	.com_default.form.uniform > .default();
+	margin:40px 0px 30px 20px;
+	padding:0 10px;
+	overflow:hidden;
+	width:640px;
+	float:left;
+	form{
+		.lib_css3.opacity > .opacity(0);
+		height:0px;
+		overflow:hidden;
+		.lib_css3.transition > .transition(all, 0.2s, ease-out, 0s);
+		&.active{
+			height:263px;
+			.lib_css3.opacity > .opacity(100);
+		}
+		&.invalid input.error, &.invalid textarea.error{border:#f00 solid 1px;}
+		input,textarea{
+			margin-bottom:9px;
+			background-color:#fff;
+			border:1px solid #c1c1c1;
+			height:51px;
+			line-height:26px;
+			padding:2px 10px 0;
+			width:100%;
+			resize: none;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			vertical-align:bottom;
+			.lib_css3.transition > .transition(all, 0.2s, ease-out, 0s);
+			&:focus{outline:#898989 solid 0px; border:1px solid #898989;}
+			&.error:focus{outline:#f00 solid 0px; border:1px solid #f00;}
+		}
+		textarea{height:105px;padding:10px;line-height:26px;overflow:auto;}
+		div.button{
+			background-color:#000;
+			border:1px solid #fff;
+			height:26px;
+			padding:0px 30px;
+			float:right;
+			color:#fff;
+			.lib_css3.transition > .transition(background-color, 0.2s, ease-out, 0s);
+			&.hover,&:hover{background-color:#898989;}
+		}
+	}
+	.succes{
+		.lib_css3.opacity > .opacity(0);
+		height:0px;
+		.lib_css3.transition > .transition(all, 0.2s, ease-out, 0s);
+		&.active{.lib_css3.opacity > .opacity(100);height:263px;}
+	}
+}

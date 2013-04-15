@@ -1,0 +1,111 @@
+
+
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+@min-width: 100%;
+@total-width: 100%;
+@max-width: 100%;
+
+// Utility variable — you should never need to modify this
+@gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
+
+// Set @total-width to 100% for a fluid layout
+@total-width: @gridsystem-width;
+
+.lib_reset.reset > .yui();
+
+html,body{
+	height:100%;
+	.com_default.fonts > .regular();
+}
+body {
+	width: 100%;
+	//.clearfix;
+}
+//standard
+strong{font-weight:bold;}
+a{
+	text-decoration:none;
+	.com_default.fonts > .grey();
+}
+a:active, a:selected, a:visited, a:focus { 
+    border: none;
+    outline: none;
+}
+h1,h2,h3,h4,a,p,span,li,input,textarea{.lib_css3.opacity > .opacity(99);}
+
+h1{.com_default.fonts > .xlarge();}
+h2{.com_default.fonts > .large();}
+
+.hidden{display:none;}
+
+
+
+#page-holder{
+	min-height:100%;
+	overflow:hidden;
+	background:transparent url('@{prefix}images/bg.jpg') repeat 0 0;
+}
+
+.container{
+	.lib_grid.grid > .container();
+}
+
+.pg-com_form2content-form, .pg-com_form2content-forms, .pg-com_users-login, .pg-com_users-profile{ 
+	.container{width:1680px;}
+}
+
+/**** naar 3 coloms ****/
+@media screen and (max-width:1950px){
+	.pg-com_form2content-form, .pg-com_form2content-forms, .pg-com_users-login, .pg-com_users-profile{ 
+		.container{width:1260px;}
+	}
+}
+
+/**** naar 2 coloms ****/
+@media screen and (max-width:1530px){
+	.pg-com_form2content-form, .pg-com_form2content-forms, .pg-com_users-login, .pg-com_users-profile{
+		.container{width:840px;}
+	}
+}
+
+/**** naar 1 coloms ****/
+@media screen and (max-width:1110px){
+	.pg-com_form2content-form, .pg-com_form2content-forms, .pg-com_users-login, .pg-com_users-profile{
+		.container{width:420px;}
+	}
+}
+
+/**** naar mobiel ****/
+@media screen and (max-width:720px){
+	.pg-com_form2content-form, .pg-com_form2content-forms, .pg-com_users-login, .pg-com_users-profile{
+		.container{width:420px;}
+	}
+}
+
+
+
+.pg-com_form2content-form, .pg-com_form2content-forms, .pg-com_users-login, .pg-com_users-profile{
+	.com_default.cms-properties > .regular();
+	.com_default.cms-properties > .medium();
+	#header-modules,#top-modules,#footer-modules,#right-modules {display:none;}
+}
+
+
+
+#header-modules{
+
+}
+
+#middle-modules{
+	
+}
+
+.lib_fancybox.fancybox > .fancybox();
+.fancybox-opened{
+	.fancybox-outer{background:transparent;}
+	.fancybox-close{background-image:url('@{prefix}images/fancybox/fancybox_sprite.png');}
+}
+
+

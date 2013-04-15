@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>MarvinVK</name>
+	<creationDate>06 March 2013</creationDate>
+	<author>Marvin van Kalsbeek</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>info@marvinvk.nl</authorEmail>
+	<authorUrl>http://www.marvinvk.nl</authorUrl>
+	<version>2.0.0</version>
+	<description>
+		
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>header-module</position>
+		<position>top-module</position>
+		<position>subtop-module</position>
+		<position>subbottom-module</position>
+		<position>left-module</position>
+		<position>right-module</position>
+		<position>bottom-module</position>
+		<position>footer-module</position>
+		<position>debug</position>
+		<position>cms-module</position>
+		<position>login-module</position>
+		<position>popup-module</position>
+		<position>form-succes-module</position>
+		<position>fixed-module</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="base" label="Basis Instellingen">
+				<field name="stylesheet" type="list" default="0" label="Stylesheet mode" description="Select whether or not to use less">
+					<option value="less">Less</option>
+					<option value="css">CSS</option>
+				</field>
+			</fieldset>	
+			<fieldset name="add-ons" label="Add-Ons instellingen">
+				
+				<field name="caroufredsel" type="list" default="0" label="Enable CarouFredsel" description="Enables CarouFredsel">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				<field name="jquerycookies" type="list" default="0" label="Enable jQuery cookies" description="Enables jQuery cookies in site">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				<field name="jwplayer" type="list" default="0" label="Enable JWPlayer" description="Enables JWPlayer in site">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				<field name="froogaloop" type="list" default="0" label="Enable Froogaloop" description="Enables Froogaloop in site">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				
+				<field name="typekit" type="list" default="0" label="Enable Typekit" description="Enable Typekit">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				<field name="typekitparam" type="text" default="mfo3wxi" label="Typekit Paramater" description="">
+				
+				</field>
+				<field name="superfish" type="list" default="0" label="Enable Superfish Dropdown menu" description="Enable Dropdown menu">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="site-styles" label="Site styles">
+				
+				<field name="header-module-style" type="list" default="onewrapper" label="Header - module style" description="Define output for header module">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="top-module-style" type="list" default="onewrapper" label="Top - module style" description="Define output for top-module">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="subtop-module-style" type="list" default="onewrapper" label="Subtop - module style" description="Define output for subtop module">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="subtop-module-style" type="list" default="onewrapper" label="Subbottom - module style" description="Define output for subbottom module">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="left-module-style" type="list" default="onewrapper" label="Left module - module style" description="Define output for left modules">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="right-module-style" type="list" default="onewrapper" label="Right module  - module style" description="Define output for right modules">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="bottom-module-style" type="list" default="onewrapper" label="Bottom - module style" description="Define output for bottom module">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+				<field name="footer-module-style" type="list" default="onewrapper" label="Footer  - module style" description="Define output for footer module">
+					<option value="raw">raw</option>
+					<option value="onewrapper">one-wrapper</option>
+					<option value="block">block</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

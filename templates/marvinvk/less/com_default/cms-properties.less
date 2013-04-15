@@ -1,0 +1,68 @@
+.com_default{ .cms-properties{
+
+	.regular(){
+		font-family: 'Lato', Arial, Helvetica, sans-serif;
+		font-weight: 400;
+	}
+
+	.bold(){
+		font-weight: 700;
+	}
+
+	.small(){
+		.lib_font.font > .size(11px, normal);
+	}
+	.medium(){
+		.lib_font.font > .size(14px, normal);
+	}
+	.large(){
+		.lib_font.font > .size(20px, normal);
+	}
+	.xlarge(){
+		.lib_font.font > .size(24px, normal);
+	}
+	.xxlarge(){
+		.lib_font.font > .size(52px, normal);
+	}
+
+	.white(){
+		color:#f2f2f2;
+	}
+	.black(){
+		color:#000;
+	}
+	.blue(){
+		color:#00a0b3;
+	}
+	.grey(){
+		color:#949494;
+	}
+
+	.scrollbar(){
+		// custom scrollbar
+		::-webkit-scrollbar {
+		    width:15px;
+		    background-color:#333;
+		}
+		 
+		::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.8); 
+		    background-color:#222222;
+		    border-radius:10px;
+		}
+		 
+		::-webkit-scrollbar-thumb {
+		    border-radius:10px;
+		    -webkit-box-shadow: inset 0px 0px 2px #000; 
+		    background-color:#d2d2d2;
+		    &:hover,&:active{
+		    	//border:1px solid @blue;
+		    	background-color:#f2f2f2;
+		    }
+		}
+		::-webkit-scrollbar-corner{
+			background-color:#222222;
+		}
+	}
+      
+}}

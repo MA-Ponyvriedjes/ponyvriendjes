@@ -1,0 +1,34 @@
+
+.lib_background{ .image{
+
+
+		.image(@image,@xposition:0px, @yposition:0px, @repeat:no-repeat){
+			background:transparent url("@{prefix}@{image}") @repeat @xposition @yposition;
+		}
+
+		.image_only(	@image,@xposition:0px, @yposition:0px,
+						@width:inherit,@height:inherit
+		){
+			background:transparent url("@{prefix}@{image}") no-repeat @xposition @yposition;
+			float:left;
+			height:0px;
+			overflow:hidden;
+			padding-top:@height;
+			width:@width;	
+		}
+
+		.position(@left,@top,@hover:0,@active:0){
+
+			background-position:@left @top;
+			
+			&:hover{
+				background-position: @left (@top+@hover);
+			}	
+
+			&:active{
+				background-position: @left (@top+@active);
+			}
+		}
+	
+
+}}

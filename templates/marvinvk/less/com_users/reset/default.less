@@ -1,0 +1,70 @@
+.com_users.reset.default{
+	.com_default.form.uniform > .default();
+	.com_default.form.uniform > .cms();
+	font-family:"Myriad Pro",sans-serif;
+	font-size:14px;
+	background:#fff url("@{prefix}../../images/cms/menu-bg.jpg") repeat-x center bottom;
+	.lib_css3.border_radius > .border_radius(10px, 10px, 10px, 10px);
+	-webkit-box-shadow: inset 0px 0px 15px 0px #cdcdcd, 0px 12px 30px -16px rgba(0,0,0,0.7);
+	-moz-box-shadow: inset 0px 0px 15px 0px #cdcdcd, 0px 12px 30px -16px rgba(0,0,0,0.7);
+	box-shadow: inset 0px 0px 15px 0px #cdcdcd, 0px 12px 30px -16px rgba(0,0,0,0.7);
+	behavior: url("@{prefix}../../js/lib_default/PIE.htc");
+	border:3px solid #fff;
+	position:relative;
+	padding:30px 30px;
+	width:300px;
+	margin:0 auto 20px;
+	h1{
+		font-size:29px;
+		text-align:center;
+		font-weight:bold;
+		margin-bottom:20px;
+		line-height:31px;
+	}
+	p{
+		line-height:19px;
+		margin-bottom:20px;
+	}
+	input{
+		width:96%;
+		padding:3px 2%;
+	}
+	div.button{
+		margin-bottom:20px;
+	}
+	a{
+		color:#000;
+		.lib_css3.transition > .transition(all,0.1s,ease-out,0s);
+		&:hover{color:#cbda00;}
+	}
+	a.logo{
+		background:transparent url("@{prefix}../../images/cms/logo_inlog.png") no-repeat 0 0;
+		height:0;
+		display:block;
+		overflow:hidden;
+		padding-top:17px;
+		width:100px;
+		position:absolute;
+		right:30px;
+		bottom:30px;
+	}
+}
+
+@media screen and (max-width:430px){
+	.com_users.reset.default{
+		padding:30px 5%;
+		width:85%;
+		margin:0 2% 20px;
+		input{
+			padding:3px 2%;
+			font-size:18px;
+			line-height:29px;
+			height:29px;
+		}
+		div.button{
+			margin-bottom:30px;
+			span{height:29px;line-height:29px;font-size:18px;}
+		}
+	}
+}
+

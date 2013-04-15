@@ -1,0 +1,77 @@
+.com_form2content.form.edit{
+	.com_default.cms-properties > .regular();
+	.com_default.cms-properties > .white();
+	.com_default.form > .cms();
+
+	#cms-top-block{
+		padding:30px;
+		overflow:hidden;
+		margin:20px 0px;
+		background:transparent url('@{prefix}images/cms/black-transparent-dark.png') repeat 0 0;
+		.top-title{
+			float:left;
+			width:50%;
+			h1{
+				.com_default.cms-properties > .xxlarge();
+				.com_default.cms-properties > .bold();
+				margin-top:15px;
+				margin-left:10px;
+			}
+		}
+		.submitbuttons-top{
+			width:50%;
+			float:left;
+			button{
+				padding:70px 0px 10px 0px;
+				width:100px;
+				float:right;
+				text-align:center;
+				margin:0 0 0 10px;
+				&.savebutton{
+					background:transparent url('@{prefix}images/cms/toolbar-icon-opslaan.png') no-repeat center 0;
+					&:hover{background-color:#00a0b3;}
+				}
+				&.applybutton{
+					background:transparent url('@{prefix}images/cms/toolbar-icon-toepassen.png') no-repeat center 0;
+					&:hover{background-color:#00a0b3;}
+				}
+				&.cancelbutton{
+					background:transparent url('@{prefix}images/cms/toolbar-icon-annuleren.png') no-repeat center 0;
+					&:hover{background-color:#00a0b3;}
+				}
+			}
+		}
+	}//end cms-top-block
+
+	#cms-middle-block-middle{
+		padding:30px;
+		overflow:hidden;
+		margin:0px 0px 20px;
+		background:transparent url('@{prefix}images/cms/black-transparent-dark.png') repeat 0 0;
+		.veld{
+			width:100%;
+			padding:10px 0px;
+			margin:10px 0px;
+			border-bottom:1px solid #f2f2f2;
+			label{
+				width:300px;
+				float:left;
+				margin-right:20px;
+			}
+		}
+		.veld.multitextarea{
+			overflow:hidden;
+			#t1_parent #t1_tbl{
+				border:none;
+			}
+			#editor-xtd-buttons a, .toggle-editor a{
+				.com_default.cms-properties > .black();
+				.com_default.cms-properties > .small();
+				float:left;
+				border:none;
+				background:#f2f2f2;
+			}
+		}
+	}//end cms-middle-block-middle
+
+}

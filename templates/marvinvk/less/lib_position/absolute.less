@@ -1,0 +1,59 @@
+.lib_position{ .absolute{
+	
+	.center(@width:auto, @height:auto, @index:10, @top:0px, @left:0px){
+		width:@width;
+		height:@height;
+		display: block;
+		position: absolute;
+		z-index: @index;
+		top:50%;
+		left:50%;
+		margin-top:-@height / 2 + @top;
+		margin-left:-@width / 2 + @left;
+	}
+
+	.top_left(@width:auto, @height:auto, @index:10, @top:0px, @left:0px){
+		
+		width:@width;
+		height:@height;
+		display: block;
+		position: absolute;
+		z-index: @index;
+		top:@top;
+		left:@left;
+	}
+	
+	.top_right(@width:auto, @height:auto, @index:10, @top:0px, @right:0px){
+		
+		width:@width;
+		height:@height;
+		display: block;
+		position: absolute;
+		z-index: @index;
+		top:@top;
+		right:@right;
+	}
+	
+	.bottom_left(@width:auto, @height:auto, @index:10, @bottom:0px, @left:0px){
+		
+		width:@width;
+		height:@height;
+		display: block;
+		position: absolute;
+		z-index: @index;
+		bottom:@bottom;
+		left:@left;
+	}
+
+	.bottom_right(@width:auto, @height:auto, @index:10, @bottom:0px, @right:0px){
+		
+		width:@width;
+		height:@height;
+		display: block;
+		position: absolute;
+		z-index: @index;
+		bottom:@bottom;
+		left:@left;
+	}
+	
+}}

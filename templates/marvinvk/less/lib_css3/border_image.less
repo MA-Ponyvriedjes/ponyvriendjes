@@ -1,0 +1,14 @@
+.lib_css3{ .border_image{
+
+	.border_image(@url:"stroke-pattern.png",@width:10,@option:round,@color:#999) {
+		border-style:solid;
+		border-width:unit(@width,px);
+		border-color:@color;
+		-moz-border-image:url("@{prefix}images/@{url}") @width @option;
+		-webkit-border-image:url("@{prefix}images/@{url}") @width @option;
+		-o-border-image:url("@{prefix}images/@{url}") @width @option;
+		border-image:url("@{prefix}images/@{url}") @width @option;
+		//behavior: url("@{prefix}@{prefix}js/lib_default/PIE.htc");
+	}
+
+}}

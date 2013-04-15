@@ -1,0 +1,38 @@
+.lib_menu{ .type{
+	
+	.dropdown(@top:0,@left:0,@width:auto){
+	
+			position:relative;
+			ul{
+				position:absolute;
+				top:@top;
+				left:@left;
+				width:@width;
+				display:none;
+			}
+			li{
+				float:left;
+				width:100%;
+			}
+	}
+
+	.horizontal(){
+		
+		.lib_util.clearfix > .clearfix();
+		
+		padding:0px;
+		margin:0px;
+		list-style:none;
+		list-style-image:none;
+		li {
+			display: inline;
+			a {
+				float:left;
+				
+			}
+			> span{
+				float:left;
+			}
+		}
+	}
+}}

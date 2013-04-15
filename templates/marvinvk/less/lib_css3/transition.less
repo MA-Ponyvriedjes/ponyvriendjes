@@ -1,0 +1,27 @@
+
+.lib_css3{ .transition{
+	
+	.transition(@elements:all,@duration:0.5s,@timing:ease,@delay:0s){
+
+			-webkit-transition-property: @elements;
+			-webkit-transition-duration: @duration;
+			-webkit-transition-timing-function:@timing;
+			-webkit-transition-delay: @delay;
+
+			-moz-transition-property: @elements;
+			-moz-transition-duration: @duration;
+			-moz-transition-timing-function: @timing;
+			-moz-transition-delay: @delay;
+
+			-o-transition-property: @elements;
+			-o-transition-duration: @duration;
+			-o-transition-timing-function: @timing;
+			-o-transition-delay: @delay;
+
+			transition-property: @elements;
+			transition-duration: @duration;
+			transition-timing-function: @timing;
+			transition-delay: @delay;
+
+	}
+}}

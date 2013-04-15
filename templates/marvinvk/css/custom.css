@@ -1,0 +1,9 @@
+
+
+#userForm input.required.activated, #userForm textarea.required.activated{
+			background:#fff url('../images/contact_buttons_goed.png') no-repeat right -8px;
+	}
+		
+	#userForm input.required.activated.error, #userForm textarea.required.activated.error{
+			background:#fff url('../images/contact_buttons_fout.png') no-repeat right -8px;
+	}

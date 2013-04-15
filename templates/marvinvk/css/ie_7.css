@@ -1,0 +1,18 @@
+/* ie_7 css hacks should go in here */
+#top-modules{margin-bottom:20px;}
+body #middle-module .left{width:49%;}
+body #middle-module .right{width:49%;}
+
+body #top-module2 .menu li.item-101 a {background-position:top center;}
+
+/*Fix for dropdown die onder volgende block valt*/
+body #top-module2 .menu  {position: relative;z-index: 1000;}
+
+/*Ie-7 fix for inline block*/
+body .ct-video .pagination ul li{zoom:1;display: inline;}
+body .ct-video .pagination ul li.pagination-next{display:block;margin-top:-80px;}
+
+#top-module2 .menu li ul{top:45px;left:0px;}
+#top-module2 .menu li ul li a{width:180px;}
+body .ct-video .item div.imageholder img{height:auto;}
+body #footer-modules #footer-module2 .inside .inside{width:19.9%}

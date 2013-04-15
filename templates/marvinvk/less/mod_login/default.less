@@ -1,0 +1,446 @@
+.mod_login.default{
+			
+	.lib_fancybox.fancybox > .fancybox();
+	.fancybox-skin{
+		background:#fff url("@{prefix}../images/cms/menu-bg.jpg") repeat-x center bottom;
+		.lib_css3.border_radius > .border_radius(10px, 10px, 10px, 10px);
+		-webkit-box-shadow: inset 0px 0px 15px 0px #cdcdcd, 0px 10px 30px -16px rgba(0,0,0,0.5);
+		-moz-box-shadow: inset 0px 0px 15px 0px #cdcdcd, 0px 10px 30px -16px rgba(0,0,0,0.5);
+		box-shadow: inset 0px 0px 15px 0px #cdcdcd, 0px 10px 30px -16px rgba(0,0,0,0.5);
+		behavior: url("@{prefix}../js/lib_default/PIE.htc");
+		border:3px solid #fff;
+		position:relative;
+		margin-top:5%;
+		.fancybox-inner{ 
+			min-height:290px;
+			.in{
+				padding:30px 30px 30px;
+				text-align:left;
+				overflow:hidden;
+				h3{
+					font-size:14px;
+					font-family:'arial';
+					color:#000;
+					text-transform:uppercase;
+					margin:0px 0px 15px 0px;
+					font-weight:bold;
+					text-shadow:none;
+					line-height:18px;
+					padding:0px;
+				}
+				p{
+					font-family:'arial';
+					color:#353535;
+					font-size:12px;
+					font-weight:normal;
+					margin-bottom:10px;
+					line-height:18px;
+					text-shadow:none;
+					padding:0px;
+					margin:0px 0 10px 0;
+					width:100%
+				}
+				fieldset{float:left;}
+				label{
+					line-height:23px;
+					padding:3px 0px;
+					width:100px;
+					float:left;
+					font-family:'arial';
+					color:#353535;
+					font-size:12px;
+					font-weight:normal;
+				}
+				input{
+					border:none;
+					//background:transparent url('@{prefix}../images/cms/invulvak.png') no-repeat top left;
+					background:#fff;
+					width:126px; 
+					height:13px; 
+					margin:3px 0px;
+					padding:5px 7px;
+					font-family:'arial';
+					font-size:13px;
+					font-weight:normal;
+					line-height:13px;
+				}
+				#modlgn-remember {width:auto;margin:8px 1px;float:left;}
+				input.button,.cms .fancybox-inner button{
+					border:none;
+					float:left;
+					clear:both;
+					.lib_css3.border_radius > .border_radius(10px, 10px, 10px, 10px);
+					.lib_css3.linear_gradient > .linear_gradient(#c8dc57, #bdd537, center top, -90deg, center bottom);
+					cursor:pointer;
+					width:139px; 
+					height:22px;
+					margin:0px 0px 20px 100px;
+					display:block;
+					color:#fff;
+					font-weight:bold;
+					font-size:12px;
+					.lib_css3.transition > .transition(all,0.2s,ease-out,0s);
+					&:hover{
+						.lib_css3.linear_gradient > .linear_gradient(#959595, #929292, center top, -90deg, center bottom);
+					}
+				}
+
+				.logout-button input.button,.cms .fancybox-inner .logout-button button{
+					margin-top:50px;
+					background:transparent url('@{prefix}../images/cms/button_uitloggen.png') no-repeat top left;
+				}
+				.logout-button input.button:hover,.cms .fancybox-inner .logout-button button:hover{background-position:0px -21px;}
+				button{background-image: url('@{prefix}../images/cms/button_verzenden.png')}
+				input.button.logout{margin-left:0px;}
+
+				dt{display:none;}
+		     
+				#system-message{
+					position:absolute; 
+					top:70px; 
+					left:32px;	
+					width:310px; 
+					dt{display:none;} 
+					dd{
+						font-family:'arial';
+						font-size:13px; 
+						&.notice{display:none;}
+						}
+					}
+				dd.message{
+					color:#1DC507;
+					line-height:18px;
+					background:transparent url("@{prefix}../images/contact_buttons_goed.png") no-repeat -10px 0px; 
+					padding-left:25px;
+					min-height:40px;
+				}
+				dd.error.message{
+					color:#D42121;
+					line-height:18px;
+					background:transparent url("@{prefix}../images/contact_buttons_fout.png") no-repeat -10px 0px; 
+					padding-left:25px;
+					min-height:40px;
+				}
+		     
+				ul.cms-login-links{
+					float:left;
+					width:35%;
+					clear:left;
+					li{
+						line-height:12px; 
+						a{
+							font-size:10px;
+							color:#959595;
+							text-decoration:none;
+							font-family:'arial';
+							font-style:italic;
+							line-height:12px;
+							text-shadow:none;
+							padding:0px;
+							margin:0px;
+							.lib_css3.transition > .transition(all,0.2s,ease-out,0s);
+							&:hover{color:#BDD537}
+						}
+					}
+				}
+				#cms-panel-logo{
+					background:transparent url('@{prefix}../images/cms/logo_inlog.png') no-repeat top left;
+					width:100px; 
+					height:0px; 
+					overflow:hidden; 
+					padding-top:26px;
+					outline:none;
+					display:block;
+					position:absolute;
+					right:30px;
+					bottom:20px;
+				}
+			}
+		}
+	}
+	.fancybox-item.fancybox-close {
+		background: url("@{prefix}../images/cms/button_close.png") 0 0;
+		width:18px;
+		height:17px;
+		top:20px;
+		right:20px;
+		margin:0;
+	}
+	.fancybox-close:hover{background-position:0px -17px;}
+	
+}
+
+.lib_css3.transition > .transition(all,0.4s,ease,0s);
+
+@media screen and (max-width:610px){
+	.mod_login.default{
+
+		.fancybox-skin{
+			width:90%;
+			margin:5% 5%;
+			.fancybox-inner{
+				min-height:290px;
+				.in{
+					padding:15px 15px;
+					h3{
+						font-size:14px;
+						margin:0px 0px 15px 0px;
+						line-height:18px;
+					}
+					p{
+						font-size:12px;
+						line-height:18px;
+						width:90%;
+						margin:0px 20px 10px 0;
+					}
+					label{
+						line-height:23px;
+						padding:3px 0px;
+						width:100px;
+						font-size:12px;
+					}
+					input{
+						width:126px; 
+						height:13px; 
+						margin:3px 0px;
+						padding:5px 7px;
+						font-size:13px;
+						line-height:13px;
+					}
+					#modlgn-remember {margin:8px 1px;}
+					input.button,.cms .fancybox-inner button{
+						width:139px; 
+						height:22px;
+						margin:0px 0px 20px 100px;
+						font-size:12px;
+					}
+
+					.logout-button input.button,.cms .fancybox-inner .logout-button button{margin-top:50px;}
+			     
+					#system-message{
+						top:70px; 
+						left:32px;	
+						width:310px;
+						dd{
+							font-size:13px; 
+							&.notice{display:none;}
+						}
+					}
+					dd.message{
+						line-height:18px;
+						padding-left:25px;
+						min-height:40px;
+					}
+					dd.error.message{
+						line-height:18px;
+						padding-left:25px;
+						min-height:40px;
+					}
+			     
+					ul.cms-login-links{
+						width:75%;
+						li{
+							line-height:12px; 
+							a{
+								font-size:10px;
+								color:#959595;
+								line-height:12px;
+							}
+						}
+					}
+					#cms-panel-logo{
+						width:100px; 
+					}
+				}
+			}
+		}
+		.fancybox-item.fancybox-close {
+			top:20px;
+			right:20px;
+		}
+		
+	}
+}
+
+@media screen and (max-width:410px){
+	.mod_login.default{
+
+		.fancybox-skin{
+			width:94%;
+			margin:3% 3%;
+			.fancybox-inner{
+				min-height:290px;
+				.in{
+					padding:10px 10px;
+					h3{
+						font-size:14px;
+						margin:0px 0px 15px 0px;
+						line-height:18px;
+					}
+					p{
+						font-size:12px;
+						line-height:18px;
+						width:90%;
+						margin:0px 20px 10px 0;
+					}
+					label{
+						line-height:23px;
+						padding:3px 0px;
+						width:100px;
+						font-size:12px;
+					}
+					input{
+						width:126px; 
+						height:13px; 
+						margin:3px 0px;
+						padding:5px 7px;
+						font-size:13px;
+						line-height:13px;
+					}
+					#modlgn-remember {margin:8px 1px;}
+					input.button,.cms .fancybox-inner button{
+						width:139px; 
+						height:22px;
+						margin:0px 0px 20px 100px;
+						font-size:12px;
+					}
+
+					.logout-button input.button,.cms .fancybox-inner .logout-button button{margin-top:50px;}
+			     
+					#system-message{
+						top:70px; 
+						left:32px;	
+						width:310px;
+						dd{
+							font-size:13px; 
+							&.notice{display:none;}
+						}
+					}
+					dd.message{
+						line-height:18px;
+						padding-left:25px;
+						min-height:40px;
+					}
+					dd.error.message{
+						line-height:18px;
+						padding-left:25px;
+						min-height:40px;
+					}
+			     
+					ul.cms-login-links{
+						width:75%;
+						li{
+							line-height:12px; 
+							a{
+								font-size:10px;
+								color:#959595;
+								line-height:12px;
+							}
+						}
+					}
+					#cms-panel-logo{
+						width:100px; 
+					}
+				}
+			}
+		}
+		.fancybox-item.fancybox-close {
+			top:10px;
+			right:10px;
+		}
+		
+	}
+}
+
+@media screen and (max-width:340px){
+	.mod_login.default{
+
+		.fancybox-skin{
+			width:94%;
+			margin:3% 3%;
+			.fancybox-inner{
+				min-height:350px;
+				.in{
+					padding:10px 10px;
+					h3{
+						font-size:14px;
+						margin:0px 0px 15px 0px;
+						line-height:18px;
+					}
+					p{
+						font-size:12px;
+						line-height:18px;
+						width:90%;
+						margin:0px 20px 10px 0;
+					}
+					label{
+						line-height:23px;
+						padding:3px 0px;
+						width:100px;
+						font-size:12px;
+					}
+					input{
+						width:100%; 
+						height:13px; 
+						margin:3px 0px;
+						padding:5px 7px;
+						font-size:13px;
+						line-height:13px;
+						background-color:#fff;
+					}
+					#modlgn-remember {margin:8px 1px;}
+					input.button,.cms .fancybox-inner button{
+						width:100%; 
+						height:22px;
+						margin:10px 0px 20px 0px;
+						font-size:12px;
+					}
+
+					.logout-button input.button,.cms .fancybox-inner .logout-button button{margin-top:50px;}
+			     
+					#system-message{
+						top:70px; 
+						left:32px;	
+						width:310px;
+						dd{
+							font-size:13px; 
+							&.notice{display:none;}
+						}
+					}
+					dd.message{
+						line-height:18px;
+						padding-left:25px;
+						min-height:40px;
+					}
+					dd.error.message{
+						line-height:18px;
+						padding-left:25px;
+						min-height:40px;
+					}
+			     
+					ul.cms-login-links{
+						width:75%;
+						li{
+							line-height:12px; 
+							a{
+								font-size:10px;
+								color:#959595;
+								line-height:12px;
+							}
+						}
+					}
+					#cms-panel-logo{
+						width:100px; 
+						right:15px;
+						bottom:10px;
+					}
+				}
+			}
+		}
+		.fancybox-item.fancybox-close {
+			top:10px;
+			right:10px;
+		}
+		
+	}
+}

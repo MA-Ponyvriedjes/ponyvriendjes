@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7.0" method="upgrade">
+ 
+	<name>f2csearch</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>July 2011</creationDate>
+	<author>Stoel de Munk</author>
+	<authorEmail>info@stoeldemunk.nl</authorEmail>
+	<authorUrl>http://www.stoeldemunk.nl</authorUrl>
+	<copyright>Copyright Stoel de munk</copyright>
+	
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.2</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>This component filters Articles based on Form2Content fields.</description>
+ 
+	
+ 	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>f2csearch.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+	</files>
+ 
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>F2C Search</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>f2csearch.php</filename>
+			<!-- SQL files section -->
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages>
+			<language tag="en-GB">admin/languages/en-GB.com_f2csearch.ini</language>
+			<language tag="en-GB">admin/languages/en-GB.com_f2csearch.sys.ini</language>
+		</languages>
+		
+	</administration>
+ 
+</extension>

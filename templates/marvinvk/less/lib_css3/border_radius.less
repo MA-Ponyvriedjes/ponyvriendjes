@@ -1,0 +1,19 @@
+.lib_css3{ .border_radius{
+
+	.border_radius(@top-left:0,@top-right:0,@bottom-right:0,@bottom-left:0) {
+		-webkit-border-top-left-radius: @top-left;
+		-webkit-border-top-right-radius: @top-right;
+		-webkit-border-bottom-right-radius: @bottom-right;
+		-webkit-border-bottom-left-radius: @bottom-left;
+		-moz-border-radius-topleft: @top-left;
+		-moz-border-radius-topright: @top-right;
+		-moz-border-radius-bottomright: @bottom-right;
+		-moz-border-radius-bottomleft: @bottom-left;
+		border-top-left-radius: @top-left;
+		border-top-right-radius: @top-right;
+		border-bottom-right-radius: @bottom-right;
+		border-bottom-left-radius: @bottom-left;  
+		//behavior: url("@{prefix}@{prefix}js/lib_default/PIE.htc");
+	}
+
+}}

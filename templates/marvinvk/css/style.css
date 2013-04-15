@@ -1,0 +1,27 @@
+
+
+/*Use if typekit is enabled*/
+/*
+.wf-loading p,.wf-loading h1,.wf-loading h2,.wf-loading h3,.wf-loading h4,.wf-loading span,.wf-loading a {visibility:hidden;}
+.wf-active p,.wf-active h1,.wf-active h2,.wf-active h3,.wf-active h4,.wf-active span,.wf-active a{visibility:visible} 
+*/
+body, p{font-family: verdana,sans-serif;font-size:13px; line-height:18px; }
+h1{}
+h2{}
+h3{}
+h4{}
+
+span.createdate{}
+span.createdby{}
+span.createdby{}
+span.modifydate{}
+
+a.readon{}
+a.readon:hover{}
+a.readon:active{}
+a.readon:visited{}
+
+a{}
+a:hover{}
+a:active{}
+a:visited{}

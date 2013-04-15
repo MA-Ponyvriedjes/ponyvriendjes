@@ -1,0 +1,119 @@
+
+.mod_menu .cms{
+	.com_default.cms-properties > .regular();
+	.com_default.cms-properties > .white();
+	.com_default.cms-properties > .medium();
+	.cms-menu-intro{
+		position:fixed;
+		z-index:100000;
+		top:20px;
+		left:0;
+		background:transparent url('http://www.marvinvk.nl/cms/images/black-transparent-dark.png') repeat 0 0;
+		width:140px;
+		height:70px;
+		overflow:hidden;
+		.lib_css3.transition > .transition(all, 0.4s, ease-out, 0s);
+		&:hover{width:470px;}
+		a.logo-small{
+			float:left;
+			height:45px;
+			width:115px;
+			margin:14px 10px;
+			background:transparent url('http://www.marvinvk.nl/cms/images/logo-small.png') no-repeat center center;
+		}
+		h1{
+			float:left;
+			.com_default.cms-properties > .xlarge();
+			margin-top:12px;
+			width:320px;
+		}
+		p.welcome{
+			.com_default.cms-properties > .small();
+			float:left;
+			width:330px;
+		}
+	}
+	a{
+		.com_default.cms-properties > .white();
+	}
+	ul.menu.mod_menu{
+		position:fixed;
+		z-index:100000;
+		top:120px;
+		left:-300px;
+		.lib_css3.opacity > .opacity(0);
+		.lib_css3.transition > .transition(all, 0.4s, ease-out, 0s);
+		&.active{
+			left:0;
+			.lib_css3.opacity > .opacity(100);
+		}
+		li{
+			margin:15px 0;
+			height:70px;
+			width:80px;
+			overflow:hidden;
+			background:transparent url('http://www.marvinvk.nl/cms/images/black-transparent-dark.png') repeat 0 0;
+			.lib_css3.transition > .transition(all, 0.2s, ease-out, 0s);
+			&:hover{width:220px;}
+		}
+		li span, li a{
+			.com_default.cms-properties > .large();
+			.com_default.cms-properties > .white();
+			.com_default.cms-properties > .bold();
+			display:block;
+			padding:23px 0;
+			padding-left:80px;
+			max-height:26px;
+			width:250px;
+			cursor:pointer;
+		}
+		li.item-116:hover{width:230px;}
+		li.item-117:hover{width:260px;}
+		li.item-118:hover{width:240px;}
+		li.item-123:hover{width:200px;}
+		li.item-116 span{background:transparent url('http://www.marvinvk.nl/cms/images/article.png') no-repeat 15px center;}
+		li.item-117 span{background:transparent url('http://www.marvinvk.nl/cms/images/articles.png') no-repeat 15px center;}
+		li.item-118 a{background:transparent url('http://www.marvinvk.nl/cms/images/eye.png') no-repeat 15px center;}
+		li.item-123 a{background:transparent url('http://www.marvinvk.nl/cms/images/overzicht.png') no-repeat 15px center;}
+	}
+	ul.menu.cms-submenu{
+		position:fixed;
+		z-index:100000;
+		left:-300px;
+		.lib_css3.opacity > .opacity(00);
+		top:135px;
+		padding:0px;
+		.lib_css3.transition > .transition(all, 0.4s, ease-out, 0s);
+		&.active{
+			left:0px;
+			.lib_css3.opacity > .opacity(100);
+		}
+		li{
+			padding: 5px 12px;
+			margin: 0px 0px 15px;
+			background:transparent url('http://www.marvinvk.nl/cms/images/black-transparent-dark.png') repeat 0 0;
+		}
+		a,span{cursor:pointer;}
+	}
+}
+.logout-button{
+	position:fixed;
+	z-index:100000;
+	top:0;
+	right:0;
+	input{
+		.com_default.cms-properties > .bold();
+		.com_default.cms-properties > .white();
+		.com_default.cms-properties > .medium();
+		padding:4px 10px;
+		border:none;
+		display:block;
+		cursor:pointer;
+		background:transparent url('@{prefix}images/cms/black-transparent-dark.png') repeat 0 0;
+	}
+}
+
+form#login-form{
+	fieldset.userdata{display:none;}
+	ul{display:none;}
+}

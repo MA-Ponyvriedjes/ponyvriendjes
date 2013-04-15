@@ -1,0 +1,14 @@
+.lib_css3{ .radial_gradient{
+
+	.radial(@start_color: #ccc, @end_color: #eee, @start: 0%, @end: 100%) {
+
+		background: @start_color; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  @start_color @start, @end_color @end); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, @end, color-stop(@start,@start_color), color-stop(@end,@end_color)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  @start_color @start,@end_color @end); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  @start_color @start,@end_color @end); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  @start_color @start,@end_color @end); /* IE10+ */
+		background: radial-gradient(ellipse at center,  @start_color @start,@end_color @end); /* W3C */
+		behavior: url("@{prefix}@{prefix}js/lib_default/PIE.htc");
+	}
+}}
